@@ -289,21 +289,20 @@ INSERT INTO public.moon VALUES (2, 'moon2', true, 3, 'moon2');
 INSERT INTO public.moon VALUES (3, 'moon3', true, 4, 'moon3');
 INSERT INTO public.moon VALUES (4, 'moon4', true, 5, 'moon4');
 INSERT INTO public.moon VALUES (5, 'moon5', true, 6, 'moon5');
-INSERT INTO public.moon VALUES (6, 'moon6', true, 7, 'moon6');
-INSERT INTO public.moon VALUES (7, 'moon1', true, 2, 'moon7');
-INSERT INTO public.moon VALUES (8, 'moon1', true, 2, 'moon8');
-INSERT INTO public.moon VALUES (9, 'moon1', true, 2, 'moon9');
-INSERT INTO public.moon VALUES (10, 'moon1', true, 2, 'moon10');
-INSERT INTO public.moon VALUES (11, 'moon1', true, 2, 'moon11');
-INSERT INTO public.moon VALUES (12, 'moon1', true, 2, 'moon12');
-INSERT INTO public.moon VALUES (13, 'moon1', true, 2, 'moon13');
-INSERT INTO public.moon VALUES (14, 'moon1', true, 2, 'moon14');
-INSERT INTO public.moon VALUES (15, 'moon1', true, 2, 'moon15');
-INSERT INTO public.moon VALUES (16, 'moon1', true, 2, 'moon16');
-INSERT INTO public.moon VALUES (17, 'moon1', true, 2, 'moon17');
-INSERT INTO public.moon VALUES (18, 'moon1', true, 2, 'moon18');
-INSERT INTO public.moon VALUES (19, 'moon1', true, 2, 'moon19');
-INSERT INTO public.moon VALUES (20, 'moon1', true, 2, 'moon20');
+INSERT INTO public.moon VALUES (6, 'moon6', true, 5, 'moon6');
+INSERT INTO public.moon VALUES (7, 'moon7', true, 6, 'moon7');
+INSERT INTO public.moon VALUES (8, 'moon8', true, 7, 'moon8');
+INSERT INTO public.moon VALUES (11, 'moon1', true, 2, 'moon10');
+INSERT INTO public.moon VALUES (12, 'moon1', true, 2, 'moon11');
+INSERT INTO public.moon VALUES (13, 'moon1', true, 2, 'moon12');
+INSERT INTO public.moon VALUES (14, 'moon1', true, 2, 'moon13');
+INSERT INTO public.moon VALUES (15, 'moon1', true, 2, 'moon14');
+INSERT INTO public.moon VALUES (16, 'moon1', true, 2, 'moon15');
+INSERT INTO public.moon VALUES (17, 'moon1', true, 2, 'moon16');
+INSERT INTO public.moon VALUES (18, 'moon1', true, 2, 'moon17');
+INSERT INTO public.moon VALUES (19, 'moon1', true, 2, 'moon18');
+INSERT INTO public.moon VALUES (20, 'moon1', true, 2, 'moon19');
+INSERT INTO public.moon VALUES (21, 'moon1', true, 2, 'moon20');
 
 
 --
@@ -311,31 +310,32 @@ INSERT INTO public.moon VALUES (20, 'moon1', true, 2, 'moon20');
 --
 
 INSERT INTO public.planet VALUES (1, 'earth', NULL, false, 1);
-INSERT INTO public.planet VALUES (2, 'mars', NULL, false, 1);
-INSERT INTO public.planet VALUES (3, 'neptune', NULL, false, 1);
-INSERT INTO public.planet VALUES (4, 'jupiter', NULL, false, 1);
-INSERT INTO public.planet VALUES (5, 'uranus', NULL, false, 1);
-INSERT INTO public.planet VALUES (6, 'venus', NULL, false, 1);
-INSERT INTO public.planet VALUES (7, 'mercury', NULL, false, 1);
-INSERT INTO public.planet VALUES (8, 'saturn', NULL, false, 1);
-INSERT INTO public.planet VALUES (9, 'pluto', NULL, false, 1);
-INSERT INTO public.planet VALUES (10, 'yolo', NULL, false, 1);
-INSERT INTO public.planet VALUES (11, 'jalla', NULL, false, 1);
-INSERT INTO public.planet VALUES (12, 'malalsa', NULL, false, 1);
-INSERT INTO public.planet VALUES (13, 'sdfsdf', NULL, false, 1);
-INSERT INTO public.planet VALUES (14, 'dude', NULL, false, 4);
+INSERT INTO public.planet VALUES (2, 'mars', NULL, false, 2);
+INSERT INTO public.planet VALUES (3, 'venus', NULL, false, 3);
+INSERT INTO public.planet VALUES (4, 'jupiter', NULL, false, 4);
+INSERT INTO public.planet VALUES (5, 'saturn', NULL, false, 5);
+INSERT INTO public.planet VALUES (6, 'mercury', NULL, false, 6);
+INSERT INTO public.planet VALUES (7, 'pluto', NULL, false, 7);
+INSERT INTO public.planet VALUES (11, 'neptune', NULL, false, 7);
+INSERT INTO public.planet VALUES (12, 'uranus', NULL, false, 7);
+INSERT INTO public.planet VALUES (13, 'yolo', NULL, false, 7);
+INSERT INTO public.planet VALUES (14, 'jajaja', NULL, false, 7);
+INSERT INTO public.planet VALUES (15, 'lalalal', NULL, false, 7);
+INSERT INTO public.planet VALUES (16, 'yourface', NULL, false, 7);
+INSERT INTO public.planet VALUES (17, 'theface', NULL, false, 7);
 
 
 --
 -- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.star VALUES (1, 123461234, 'red', 'beatlejuice', 1);
-INSERT INTO public.star VALUES (2, 123461234, 'yellow', 'joe', 1);
-INSERT INTO public.star VALUES (3, 123461234, 'yellow', 'gary', 1);
-INSERT INTO public.star VALUES (4, 123461234, 'yellow', 'big yellow', 1);
-INSERT INTO public.star VALUES (5, 123461234, 'orange', 'small orange', 1);
-INSERT INTO public.star VALUES (6, 123461234, 'orange', 'star in galaxy', 2);
+INSERT INTO public.star VALUES (1, 1234561234, 'red', 'beatlejuice', 1);
+INSERT INTO public.star VALUES (2, 1234561234, 'yellow', 'gary', 1);
+INSERT INTO public.star VALUES (3, 1234561234, 'blue', 'john', 2);
+INSERT INTO public.star VALUES (4, 1234561234, 'green', 'light', 4);
+INSERT INTO public.star VALUES (5, 1234561234, 'purple', 'dark', 5);
+INSERT INTO public.star VALUES (6, 1234561234, 'red', 'beatlejuice', 1);
+INSERT INTO public.star VALUES (7, 1234561234, 'gold', 'beatles', 1);
 
 
 --
@@ -356,21 +356,21 @@ SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 6, true);
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 20, true);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 21, true);
 
 
 --
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 14, true);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 17, true);
 
 
 --
 -- Name: star_star_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.star_star_id_seq', 6, true);
+SELECT pg_catalog.setval('public.star_star_id_seq', 7, true);
 
 
 --
@@ -403,6 +403,14 @@ ALTER TABLE ONLY public.moon
 
 ALTER TABLE ONLY public.moon
     ADD CONSTRAINT moon_pkey PRIMARY KEY (moon_id);
+
+
+--
+-- Name: galaxy name_unique; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.galaxy
+    ADD CONSTRAINT name_unique UNIQUE (name);
 
 
 --
@@ -448,4 +456,6 @@ ALTER TABLE ONLY public.planet
 --
 -- PostgreSQL database dump complete
 --
+
+
 
